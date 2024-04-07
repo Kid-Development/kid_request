@@ -3,14 +3,18 @@ Config = {}
 Config.Name = 'fullname' -- ("fullname", "citizendid", "server-id")
 
 Config.Lang = {
-    notify = {
-        accepted = "%s accepted your request!",
-        denied = "%s denied your request!",
-        sent = "%s sent a request to you!"
-    },
+    ['en'] = {
+        notify = {
+            accepted = "%s accepted your request!",
+            denied = "%s denied your request!",
+            sent = "%s sent a request to you!",
+            busy = "This player is busy",
+            noonline = "This player is offline"
+        },
+    }
 }
 
-local _lang = GetConvar('locale', 'en')
+local _lang = GetConvar('qb_locale', 'en')
 Lang = Config.Lang[_lang]
 
 Framework = {}

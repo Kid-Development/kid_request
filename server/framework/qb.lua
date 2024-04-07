@@ -1,6 +1,6 @@
 if not Framework.QBCore() then return end
 
-local QBCore = exports['rep-core']:GetCoreObject()
+local QBCore = exports['qb-core']:GetCoreObject()
 
 function Framework.getIdentifier(playerId)
     local xPlayer = QBCore.Functions.GetPlayer(playerId)
@@ -13,6 +13,6 @@ function Framework.getFullName(playerId)
 end
 
 function Framework.serverNotify(src, message, _type, time)
-    TriggerClientEvent('QBCore:Notify', src, message, 'error', _type, time)
+    TriggerClientEvent('QBCore:Notify', src, message, _type, time)
 end
 

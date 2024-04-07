@@ -7,9 +7,9 @@ lua54 'yes'
 
 games { "gta5", "rdr3" }
 
-shared_scripts { '@ox_lib/init.lua' }
+shared_scripts { '@ox_lib/init.lua', 'config.lua' }
 
-client_scripts {   'client/framework/*.lua','client/*.lua' }
+client_scripts {'client/*.lua' }
 
 server_scripts {
     'server/framework/*.lua',
